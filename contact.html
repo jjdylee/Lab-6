@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Cookie Days</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Cookie Days</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Open menu">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+      <div class="drawer-header">
+        <p class="drawer-title" id="navbarNavLabel">Menu</p>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About Cookie</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
+<main class="container mt-5">
+  <h1>Say hello to Cookie</h1>
+  <p>Have a question or a favourite Cookie moment? Leave a message below.</p>
+  <p>This is a class practice form. Messages are not sent or stored.</p>
+  <form action="contact.html" method="get">
+    <div class="row g-4">
+      <div class="col-12 md:col-6">
+        <div class="form-field">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="form-field">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="form-field">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="form-field">
+          <label for="topic" class="form-label">Topic</label>
+          <select id="topic" class="form-control">
+            <option>Cookie's daily life</option>
+            <option>Photos and illustrations</option>
+            <option>Just saying hello</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="form-field">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" class="form-control" rows="5" required></textarea>
+        </div>
+      </div>
+      <div class="col-12 md:col-6">
+        <div class="form-field">
+          <input type="checkbox" id="consent" class="check" required>
+          <label for="consent">I agree to be contacted.</label>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn-solid theme-primary mt-5">Submit</button>
+  </form>
+</main>
+<footer class="bg-primary fg-contrast-primary text-center p-4 mt-5">
+  <p>Cookie Days &copy; 2026 Yitong Li</p>
+  <p class="mb-0">Original Shiba illustrations made for this site with AI assistance.</p>
+</footer>
+</body>
+</html>
